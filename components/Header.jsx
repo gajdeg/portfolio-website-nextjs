@@ -1,8 +1,9 @@
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Header(props) {
   return (
-    <header className="sticky p-5 top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center overflow-hidden">
+    <header className="fixed p-5 top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -20,7 +21,9 @@ export default function Header(props) {
           bgColor="transparent"
         />
       </motion.div>
+
       <motion.div
+        className=" fixed p-5 top-0 right-0"
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
