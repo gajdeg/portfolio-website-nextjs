@@ -10,8 +10,8 @@ function Hero(props) {
 
   const handleScroll = (e) => {
     e.preventDefault();
-    const hash = e.target.innerHTML;
-    const element = document.querySelector(`#${hash}`);
+    const hash = e.target.parentNode.hash;
+    const element = document.querySelector(hash);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -50,20 +50,22 @@ function Hero(props) {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div className="pt-5">
-          <button className="heroButton" onClick={handleScroll}>
-            about
-          </button>
+          <Link href="#about" replace>
+            <button className="heroButton" onClick={handleScroll}>
+              About
+            </button>
+          </Link>
 
-          <button className="heroButton" onClick={handleScroll}>
-            experience
-          </button>
-          <button className="heroButton" onClick={handleScroll}>
-            skills
-          </button>
+          <Link href="#experience">
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link href="#skills">
+            <button className="heroButton">Skills</button>
+          </Link>
 
-          <button className="heroButton" onClick={handleScroll}>
-            projects
-          </button>
+          <Link href="#about">
+            <button className="heroButton">Projects</button>
+          </Link>
         </div>
       </div>
     </motion.div>

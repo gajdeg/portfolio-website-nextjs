@@ -1,16 +1,18 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Link from "next/link";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
 export default function Home() {
   return (
-    <div className="bg-[#201a26] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0">
+    <div
+      style={rajdhani.style}
+      className="bg-[#201a26] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0"
+    >
       <Head>
         <title>Geri`s Portfolio</title>
       </Head>

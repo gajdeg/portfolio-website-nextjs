@@ -1,20 +1,11 @@
 import { motion } from "framer-motion";
+import BackgroundCircles from "./BackgroundCircles";
 export default function About() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+    <div
       className=" h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-full
     px-10 justify-evenly mx-auto items-center"
     >
-      <h3
-        className="absolute top-20 uppercase tracking-[20px] text-gray-500
-        text-2xl"
-      >
-        About
-      </h3>
-
       <motion.img
         initial={{
           x: -200,
@@ -37,13 +28,13 @@ export default function About() {
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="space-y-3 px-0 md:px-10"
+        className="space-y-3 px-0 md:px-10 text-left"
       >
-        <h4 className="text-xl font-semibold ">
-          Here is a<span className="font-bold"> little </span>
-          background
-        </h4>
-        <p className="text-base">
+        <p className=" text-zinc-400 sm:text-[18px] text-[14px] text-secondary edison uppercase tracking-wider">
+          Introduction
+        </p>
+        <h4 className="text-4xl font-semibold ">Overview.</h4>
+        <p className=" text-zinc-400 text-sm sm:text-base">
           As a front-end developer, my expertise lies in creating and
           maintaining user interfaces for web applications. I possess a solid
           understanding of HTML, CSS, and JavaScript and specialize in popular
@@ -57,6 +48,6 @@ export default function About() {
           applications.
         </p>
       </motion.div>
-    </motion.div>
+    </div>
   );
 }

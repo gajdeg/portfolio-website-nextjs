@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap");
 @layer components {
   .heroButton {
     @apply px-6 py-2 border border-[#201a26] rounded-full uppercase text-xs tracking-widest text-gray-50 transition-all
@@ -21,11 +21,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff821e;
-  border-radius: 50px;
+  background: #20261a;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff9034;
+  background: #20261ad2;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
 }
