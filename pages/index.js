@@ -3,41 +3,39 @@ import { Rajdhani } from "next/font/google";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Link from "next/link";
-import Image from "next/image";
+import ParticleBackground from "@/components/ParticleBg";
+import Skills from "@/components/skills/Skills";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
 export default function Home() {
   return (
     <div
       style={rajdhani.style}
-      className="bg-[#201a26] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0"
+      className=" text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0"
     >
+      <ParticleBackground />
+
       <Head>
         <title>Geri`s Portfolio</title>
       </Head>
-
       {/* Header */}
       <Header />
-
       {/* Hero */}
       <section id="hero" className="s">
         <Hero />
       </section>
-
       {/* About */}
       <section id="about" className="">
         <About />
       </section>
-
       {/* Experience */}
-
       {/* Skills */}
-
+      <section id="skills" className="">
+        <Skills />
+      </section>
       {/* Projects */}
-
       {/* Contact Me*/}
-      <Link href="#hero">
+      {/* <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <Image
@@ -49,7 +47,7 @@ export default function Home() {
             />
           </div>
         </footer>
-      </Link>
+      </Link> */}
     </div>
   );
 }

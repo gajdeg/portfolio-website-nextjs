@@ -11,6 +11,7 @@ export default function Header(props) {
       >
         {/*Social Icons*/}
         <SocialIcon
+          style={{ transform: "scale(1.2)" }}
           url="https://github.com/ger11kadiu"
           fgColor="gray"
           bgColor="transparent"
@@ -35,7 +36,7 @@ export default function Header(props) {
           bgColor="transparent"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400 cursor-pointer">
-          Get In Touch
+          Contact
         </p>
       </motion.div>
     </header>

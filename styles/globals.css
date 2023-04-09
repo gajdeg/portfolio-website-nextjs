@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap");
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#201a26] rounded-full uppercase text-xs tracking-widest text-gray-50 transition-all
-    hover:border-[#cb976c]/40 hover:text-[#cb976c]/40;
+    @apply px-6 py-2 border border-[#201a26] rounded-full uppercase text-xs md:text-sm lg:text-base tracking-widest text-gray-50 transition-all
+    hover:border-[#B266FF] hover:text-[#B266FF] m-2 hover:scale-110 hover:transition-all hover:duration-500 duration-500;
   }
 }
 
@@ -16,19 +16,46 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #201a26;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #20261a;
+  background: linear-gradient(#b366ff67, #b366ff);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #20261ad2;
+  background: #b366ffac;
 }
 
-body {
-  font-family: "Rajdhani", sans-serif;
+.skill-card {
+  border: 2px solid #808080;
+  margin: 10px;
+  padding: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.skill-card:hover {
+  border-image: linear-gradient(#b366ff67, #b366ff) 30;
+  border-width: 2px;
+  border-style: solid;
+  transform: scale(1.15);
+  transition: all 0.5s ease-in-out;
+}
+
+.skill-card:hover .react-icons {
+  color: #b266ff;
+  transition: all 0.5s ease-in-out;
+}
+
+.react-icons {
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 430px) {
+  .skill-card {
+    display: flex;
+    width: 110px;
+  }
 }

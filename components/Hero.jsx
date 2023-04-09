@@ -18,7 +18,7 @@ function Hero(props) {
   };
 
   const [text, count] = useTypewriter({
-    words: ["Hi I`m Geri Kadiu", "<FrontEndDeveloper />"],
+    words: ["Hi I`m Geri Kadiu", "<Developer />"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -32,35 +32,35 @@ function Hero(props) {
     >
       <div className="relative mx-auto object-cover">
         <Image
-          src="/../public/profilePic.jpg"
+          src="/../public/aboutPic1.png"
           alt="Profile picture"
-          width={128}
-          height={128}
-          style={{ borderRadius: "50%" }}
+          width={180}
+          height={180}
+          style={{ borderRadius: "" }}
           priority={true}
         />
       </div>
-
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-          Software Engineer
+        <h2 className="text-md uppercase text-gray-500 pb-2 tracking-[10px]">
+          Software Developer
         </h2>
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold px-10">
           <span>{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
-        <div className="pt-5">
+        <div className="pt-5 sm:flex-row flex flex-col">
           <Link href="#about" replace>
             <button className="heroButton" onClick={handleScroll}>
               About
             </button>
           </Link>
-
+          <Link href="#skills" replace>
+            <button className="heroButton" onClick={handleScroll}>
+              Skills
+            </button>
+          </Link>
           <Link href="#experience">
             <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="heroButton">Skills</button>
           </Link>
 
           <Link href="#about">
