@@ -10,6 +10,7 @@
 }
 
 ::-webkit-scrollbar {
+  z-index: 20;
   width: 6px;
   height: 6px;
 }
@@ -21,6 +22,8 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  position: absolute;
+  z-index: 21;
   background: linear-gradient(#b366ff67, #b366ff);
 }
 

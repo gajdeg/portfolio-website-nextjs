@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div
       style={rajdhani.style}
-      className=" text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0"
+      className=" text-white h-screen snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden"
     >
       <ParticleBackground />
 

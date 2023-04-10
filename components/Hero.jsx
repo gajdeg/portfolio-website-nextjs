@@ -18,7 +18,7 @@ function Hero(props) {
   };
 
   const [text, count] = useTypewriter({
-    words: ["Hi I`m Geri Kadiu", "<Developer />"],
+    words: ["Hi There!", "I`m Geri Kadiu", "<Developer />"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -40,7 +40,7 @@ function Hero(props) {
           priority={true}
         />
       </div>
-      <div className="z-20">
+      <div className="z-19">
         <h2 className="text-md uppercase text-gray-500 pb-2 tracking-[10px]">
           Software Developer
         </h2>
