@@ -2,6 +2,7 @@ import React from "react";
 import { DiReact, DiMongodb, DiGit, DiVisualstudio } from "react-icons/di";
 import { IconContext } from "react-icons";
 import {
+  SiFigma,
   SiFirebase,
   SiLinux,
   SiMongodb,
@@ -14,7 +15,7 @@ import {
 export default function Tools() {
   return (
     <IconContext.Provider value={{ className: "react-icons", size: "5rem" }}>
-      <ul className="flex flex-wrap justify-center p-12 lg:flex-nowrap">
+      <ul className="flex flex-wrap justify-center lg:flex-nowrap">
         <li className="skill-card">
           <DiVisualstudio />
         </li>
@@ -25,10 +26,10 @@ export default function Tools() {
           <SiVercel />
         </li>
         <li className="skill-card">
-          <SiNetlify />
+          <SiLinux />
         </li>
         <li className="skill-card">
-          <SiLinux />
+          <SiFigma />
         </li>
         <li className="skill-card">
           <SiMongodb />

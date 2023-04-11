@@ -6,6 +6,7 @@ import About from "@/components/About";
 import ParticleBackground from "@/components/ParticleBg";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
+import Experiences from "@/components/experiences/Experiences";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
 export default function Home() {
@@ -22,14 +23,14 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Hero */}
-      <section id="hero" className="s">
+      <section id="hero" className="">
         <Hero />
       </section>
       {/* About */}
       <section id="about" className="">
         <About />
       </section>
-      {/* Experience */}
+
       {/* Skills */}
       <section id="skills" className="">
         <Skills />
@@ -37,6 +38,10 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="">
         <Projects />
+      </section>
+      {/* Experience */}
+      <section id="experiences" className="">
+        <Experiences />
       </section>
       {/* <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">

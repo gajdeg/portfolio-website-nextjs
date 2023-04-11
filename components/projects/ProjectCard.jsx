@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProjectCard(props) {
   return (
-    <div className="flex flex-col items-center justify-center p-4 border m-2 rounded-lg">
+    <div className="project-card">
       <Image
         src={props.imgUrl}
         alt="Profile picture"
@@ -11,14 +11,14 @@ export default function ProjectCard(props) {
         height={300}
         priority={true}
       />
-      <h1 className="text-4xl pt-10">Parsec</h1>
-      <p className="text-left pt-10">
-        Online code and markdown editor build with react.js. Online Editor which
-        supports html, css, and js code with instant view of website. Online
-        markdown editor for building README file which supports GFM, Custom Html
-        tags with toolbar and instant preview.Both the editor supports auto save
-        of work using Local Storage
-      </p>
+      <div className="pt-10">
+        <h1 className="text-4xl">{props.title}</h1>
+        <p className="text-left text-zinc-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+          suscipit tellus mauris a diam maecenas.
+        </p>
+      </div>
     </div>
   );
 }

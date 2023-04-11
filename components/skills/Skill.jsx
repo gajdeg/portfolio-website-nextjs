@@ -6,7 +6,7 @@ import { SiFirebase, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 export default function Skill() {
   return (
     <IconContext.Provider value={{ className: "react-icons", size: "5rem" }}>
-      <ul className="flex flex-wrap justify-center p-12 lg:flex-nowrap">
+      <ul className="flex flex-wrap justify-center lg:flex-nowrap">
         <li className="skill-card">
           <DiJavascript />
         </li>

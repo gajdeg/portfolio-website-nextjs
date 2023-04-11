@@ -63,8 +63,10 @@ function Hero(props) {
               Projects
             </button>
           </Link>
-          <Link href="#experience">
-            <button className="heroButton">Experience</button>
+          <Link href="#experiences">
+            <button className="heroButton" onClick={handleScroll}>
+              Experience
+            </button>
           </Link>
         </div>
       </div>
