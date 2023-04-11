@@ -3,7 +3,7 @@ export default function About() {
   return (
     <div
       className=" h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-full
-    px-10 justify-evenly mx-auto items-center"
+    px-10 justify-evenly mx-auto items-center pt-20"
     >
       <motion.img
         initial={{
@@ -16,7 +16,7 @@ export default function About() {
         whileInView={{ opacity: 1, x: 0 }}
         src="/aboutPic.jpg"
         alt="user picture"
-        className="mt-20 md:mb-0  flex-shrink-0 h-60 w-60 md:w-80 md:h-80
+        className="mt-20 md:mb-0 flex-shrink-0 w-52 h-52 md:w-[300px] md:h-[300px]
         rounded-full object-cover md:rounded-lg 
         xl:w-[400px] xl:h-[400px] "
       />

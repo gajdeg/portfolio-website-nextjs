@@ -36,7 +36,6 @@ function Hero(props) {
           alt="Profile picture"
           width={180}
           height={180}
-          style={{ borderRadius: "" }}
           priority={true}
         />
       </div>
@@ -49,22 +48,23 @@ function Hero(props) {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div className="pt-5 sm:flex-row flex flex-col">
-          <Link href="#about" replace>
+          <Link href="#about">
             <button className="heroButton" onClick={handleScroll}>
               About
             </button>
           </Link>
-          <Link href="#skills" replace>
+          <Link href="#skills">
             <button className="heroButton" onClick={handleScroll}>
               Skills
             </button>
           </Link>
+          <Link href="#projects">
+            <button className="heroButton" onClick={handleScroll}>
+              Projects
+            </button>
+          </Link>
           <Link href="#experience">
             <button className="heroButton">Experience</button>
-          </Link>
-
-          <Link href="#about">
-            <button className="heroButton">Projects</button>
           </Link>
         </div>
       </div>

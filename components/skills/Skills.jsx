@@ -4,7 +4,7 @@ import Tools from "./Tools";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col text-center pt-20 md:mt-0">
+    <div className="flex flex-col text-center pt-28 md:mt-0">
       <h3 className="text-4xl text-zinc-400 ">
         Professional <span className="text-white">Skillset</span>
       </h3>

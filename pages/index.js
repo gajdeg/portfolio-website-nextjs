@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ParticleBackground from "@/components/ParticleBg";
 import Skills from "@/components/skills/Skills";
+import Projects from "@/components/projects/Projects";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
 export default function Home() {
@@ -34,7 +35,9 @@ export default function Home() {
         <Skills />
       </section>
       {/* Projects */}
-      {/* Contact Me*/}
+      <section id="projects" className="">
+        <Projects />
+      </section>
       {/* <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
