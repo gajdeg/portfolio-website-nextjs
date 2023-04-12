@@ -25,17 +25,7 @@ export default function Experiences() {
         >
           <h3 className="text-2xl">Hermann Gmeiner</h3>
           <span className="text-zinc-300">Computer Software Engineering</span>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          contentStyle={{ background: "#b366ff67", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #b266ff" }}
-          date="09/2019 - 03/2023"
-          iconStyle={{ background: "#b266ff" }}
-          icon={<FaUniversity />}
-        >
-          <h3 className="text-2xl">Università degli Studi di Milano-Bicocca</h3>
-          <span className="text-zinc-300">Bachelor`s degree, Informatics</span>
+          <p />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -51,6 +41,18 @@ export default function Experiences() {
             Responsive Web Design · JSON · React.js · Node.js · MongoDB ·
             JavaScript · Cascading Style Sheets (CSS) · HTML
           </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          contentStyle={{ background: "#b366ff67", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #b266ff" }}
+          date="09/2019 - 03/2023"
+          iconStyle={{ background: "#b266ff" }}
+          icon={<FaUniversity />}
+        >
+          <h3 className="text-2xl">Università degli Studi di Milano-Bicocca</h3>
+          <span className="text-zinc-300">Bachelor`s degree, Informatics</span>
+          <p />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

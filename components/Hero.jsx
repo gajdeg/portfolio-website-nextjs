@@ -3,22 +3,10 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
 
 function Hero(props) {
-  const router = useRouter();
-
-  const handleScroll = (e) => {
-    e.preventDefault();
-    const hash = e.target.parentNode.hash;
-    const element = document.querySelector(hash);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const [text, count] = useTypewriter({
-    words: ["Hi There!", "I`m Geri Kadiu", "<Developer />"],
+    words: ["Hi There!", "I`m Geri Kadiu", "<FrontEndDeveloper />"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -47,28 +35,6 @@ function Hero(props) {
           <span>{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
-        <div className="pt-5 sm:flex-row flex flex-col">
-          <Link href="#about">
-            <button className="heroButton" onClick={handleScroll}>
-              About
-            </button>
-          </Link>
-          <Link href="#skills">
-            <button className="heroButton" onClick={handleScroll}>
-              Skills
-            </button>
-          </Link>
-          <Link href="#projects">
-            <button className="heroButton" onClick={handleScroll}>
-              Projects
-            </button>
-          </Link>
-          <Link href="#experiences">
-            <button className="heroButton" onClick={handleScroll}>
-              Experience
-            </button>
-          </Link>
-        </div>
       </div>
     </motion.div>
   );

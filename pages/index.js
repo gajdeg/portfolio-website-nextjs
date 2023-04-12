@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div
       style={rajdhani.style}
-      className=" text-white h-screen snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden"
+      className=" text-white snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden"
     >
       <ParticleBackground />
 
@@ -35,13 +35,13 @@ export default function Home() {
       <section id="skills" className="">
         <Skills />
       </section>
-      {/* Projects */}
-      <section id="projects" className="">
-        <Projects />
-      </section>
       {/* Experience */}
       <section id="experiences" className="">
         <Experiences />
+      </section>
+      {/* Projects */}
+      <section id="projects" className="">
+        <Projects />
       </section>
       {/* <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">

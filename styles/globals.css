@@ -3,9 +3,9 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap");
 @layer components {
-  .heroButton {
-    @apply px-6 py-2 border border-[#201a26] rounded-full uppercase text-xs md:text-sm lg:text-base tracking-widest text-gray-50 transition-all
-    hover:border-[#B266FF] hover:text-[#B266FF] p-2 hover:scale-110 hover:transition-all hover:duration-500 duration-500;
+  .menuItem {
+    @apply px-6 uppercase text-sm tracking-widest text-gray-50 transition-all
+    hover:border-[#B266FF] hover:text-[#B266FF] hover:scale-110 hover:transition-all hover:duration-500 duration-500;
   }
 }
 
@@ -80,4 +80,8 @@
   border-color: #b266ff;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }

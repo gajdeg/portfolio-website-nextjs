@@ -4,12 +4,12 @@ import Tools from "./Tools";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col text-center pt-24 md:mt-0">
-      <h3 className="text-4xl text-zinc-400 ">
+    <div className="flex flex-col text-center md:mt-0 pt-24 justify-center items-center">
+      <h3 className="text-4xl text-zinc-400 pb-10">
         Professional <span className="text-white">Skillset</span>
       </h3>
       <Skill />
-      <h3 className="text-4xl text-white pt-10">
+      <h3 className="text-4xl text-white py-10">
         Tools <span className="text-zinc-400">I use</span>
       </h3>
       <Tools />
