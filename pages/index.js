@@ -7,6 +7,10 @@ import ParticleBackground from "@/components/ParticleBg";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
 import Experiences from "@/components/experiences/Experiences";
+import Contact from "@/components/Contact";
+import Link from "next/link";
+import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
 export default function Home() {
@@ -30,7 +34,6 @@ export default function Home() {
       <section id="about" className="">
         <About />
       </section>
-
       {/* Skills */}
       <section id="skills" className="">
         <Skills />
@@ -43,19 +46,26 @@ export default function Home() {
       <section id="projects" className="">
         <Projects />
       </section>
-      {/* <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            <Image
-              src="/../public/profilePic.jpg"
-              width={40}
-              height={40}
-              className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              alt=""
-            />
-          </div>
-        </footer>
-      </Link> */}
+      <section id="contact" className="flex justify-center py-24">
+        <Contact />
+      </section>
+      <Footer />
     </div>
   );
+}
+
+{
+  /* <Link href="/#hero" scroll={false}>
+<footer className="sticky bottom-5 w-full cursor-pointer">
+  <div className="flex items-center justify-center">
+    <Image
+      src="/../public/profilePic.jpg"
+      width={40}
+      height={40}
+      className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+      alt=""
+    />
+  </div>
+</footer>
+</Link> */
 }

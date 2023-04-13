@@ -35,7 +35,12 @@ export default function Header(props) {
         />
       </motion.div>
       {/*Menu Motion Div*/}
-      <motion.div className="hidden md:flex">
+      <motion.div
+        initial={{ y: -500, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="hidden md:flex"
+      >
         <Link href="/#about" scroll={false}>
           <button className="menuItem">About</button>
         </Link>
