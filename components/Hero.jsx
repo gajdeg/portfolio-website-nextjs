@@ -2,7 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import profilePic from "../public/aboutPic1.png"
+import profilePic from "../public/profilePic.png";
 
 function Hero(props) {
   const [text, count] = useTypewriter({
