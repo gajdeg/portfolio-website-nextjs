@@ -1,8 +1,8 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import profilePic from "../public/aboutPic1.png"
 
 function Hero(props) {
   const [text, count] = useTypewriter({
@@ -20,7 +20,7 @@ function Hero(props) {
     >
       <div className="relative mx-auto object-cover">
         <Image
-          src="/../public/aboutPic1.jpg"
+          src={profilePic}
           alt="Profile picture"
           width={180}
           height={180}
