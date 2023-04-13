@@ -20,7 +20,7 @@ function Hero(props) {
     >
       <div className="relative mx-auto object-cover">
         <Image
-          src="/../public/aboutPic1.png"
+          src="/../public/aboutPic1.jpg"
           alt="Profile picture"
           width={180}
           height={180}
