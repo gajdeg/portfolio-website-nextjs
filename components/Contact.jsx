@@ -5,7 +5,7 @@ export default function Contact() {
     e.preventDefault();
   };
   return (
-    <div className="flex flex-col items-center justify-center md:mt-0 rounded-xl bg-[#49345e] w-3/4 md:w-3/6 lg:w-2/6">
+    <div className="flex flex-col items-center justify-center md:mt-0 rounded-xl border-2 border-[#49345e] w-3/4 md:w-3/6 lg:w-2/6">
       <div className="text text-lg w-full pl-8 pt-4 uppercase">
         Get in Touch
       </div>

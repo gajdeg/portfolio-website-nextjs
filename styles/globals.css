@@ -87,7 +87,8 @@ html {
 }
 
 .form-control {
+  border: 2px solid #49345e;
   border-radius: 5px;
-  background: #b366ff67;
+  background: transparent;
   padding: 10px;
 }
