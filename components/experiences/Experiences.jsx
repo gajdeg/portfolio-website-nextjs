@@ -31,7 +31,7 @@ export default function Experiences() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#b366ff67", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #b266ff" }}
-          date="12/2022 - 02/2023"
+          date="06/2022 - 08/2022"
           iconStyle={{ background: "#fff" }}
           icon={<CommitLogo />}
         >
@@ -58,7 +58,7 @@ export default function Experiences() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#b366ff67", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #b266ff" }}
-          date="03/2023 - Present"
+          date="09/2022 - Present"
           iconStyle={{ background: "#fff" }}
           icon={<CommitLogo />}
         >
