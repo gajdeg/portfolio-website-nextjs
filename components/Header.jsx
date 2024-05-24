@@ -28,7 +28,7 @@ export default function Header(props) {
         />
         <SocialIcon
           className="hover:scale-125 duration-300 hover:duration-300 "
-          url="https://t.me/ger11k"
+          url="https://t.me/gajdeg"
           target="_blank"
           fgColor="gray"
           bgColor="transparent"
