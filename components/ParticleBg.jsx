@@ -8,15 +8,10 @@ export default function ParticleBackground() {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    console.log(container);
-  }, []);
-
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={particleConfig}
     />
   );

@@ -5,11 +5,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ParticleBackground from "@/components/ParticleBg";
 import Skills from "@/components/skills/Skills";
-import Projects from "@/components/projects/Projects";
 import Experiences from "@/components/experiences/Experiences";
 import Contact from "@/components/Contact";
-import Link from "next/link";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: "600" });
@@ -17,8 +14,7 @@ export default function Home() {
   return (
     <div
       style={rajdhani.style}
-      className=" text-white snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden"
-    >
+      className=" text-white snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden">
       <ParticleBackground />
 
       <Head>
@@ -43,9 +39,9 @@ export default function Home() {
         <Experiences />
       </section>
       {/* Projects */}
-      <section id="projects" className="">
+      {/* <section id="projects" className="">
         <Projects />
-      </section>
+      </section> */}
       <section id="contact" className="flex justify-center py-24">
         <Contact />
       </section>
