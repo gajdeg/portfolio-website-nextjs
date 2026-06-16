@@ -10,8 +10,7 @@ export default function Header(props) {
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
+        transition={{ duration: 1 }}>
         <SocialIcon
           className="hover:scale-125 duration-300 hover:duration-300 "
           url="https://github.com/gajdeg"
@@ -39,8 +38,7 @@ export default function Header(props) {
         initial={{ y: -500, opacity: 0, scale: 0.5 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="hidden md:flex"
-      >
+        className="hidden md:flex">
         <Link href="/#about" scroll={false}>
           <button className="menuItem">About</button>
         </Link>
@@ -50,17 +48,16 @@ export default function Header(props) {
         <Link href="/#experiences" scroll={false}>
           <button className="menuItem">Experience</button>
         </Link>
-        <Link href="/#projects" scroll={false}>
+        {/* <Link href="/#projects" scroll={false}>
           <button className="menuItem">Projects</button>
-        </Link>
+        </Link> */}
       </motion.div>
       {/*Contact Me Motion Div*/}
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="flex"
-      >
+        className="flex">
         <Link href="/#contact" scroll={false}>
           <div className="hover:scale-125 duration-300 hover:duration-300 cursor-pointer flex">
             <div className="text-2xl">
